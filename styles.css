@@ -1,0 +1,126 @@
+:root {
+    --main-font: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
+}  
+
+body {
+    background-color: rgb(242, 244, 243);
+    font-family: var(--main-font);
+    color: rgb(38, 31, 56);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 25px);
+}
+
+.main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    margin: 0.8rem 0rem;
+    padding: 1.2rem 0rem;
+    width: 100%;
+    max-width: 35rem;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 0.6rem;
+}
+
+
+.main-color {
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 35rem;
+    margin: 0.3rem 0rem;
+    padding: 1.4rem 0rem 2rem 0rem;
+}
+
+.date {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr 3.5rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 0.2rem;
+    align-items: center;
+    justify-items: auto;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+.grid-container svg {
+    justify-self: center;
+    margin-right: 0.8rem;
+    margin-left: 1.2rem;
+    height: 2em;
+}
+
+.grid-container input {
+    font-size: 2.3rem;
+    height: 4rem;
+    text-align: right;
+    min-width: 13rem;
+    padding-right: 0.3rem;
+}
+
+.grid-container label {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+}
+
+
+.flex-descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 35rem;
+}
+
+.description-color,
+.satoshi-color {
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 35rem;
+    margin: 0.3rem 0rem;
+    padding: 1.2rem 0rem;
+}
+
+.description,
+.link,
+.table {
+    font-size: 0.9rem;
+    text-align: left;
+    width: 0;
+    min-width: 19rem;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+
+.footer {
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 0.85rem;
+    margin: 1rem 0.5rem 0 0;
+}
